@@ -16,5 +16,9 @@ console.log(k)
 let user = new User("bob", 10)
 console.log(user)
 printAge(user)
+
+let btn = document.querySelector("#Youtube")
+
+btn.addEventListener("click" , (()=> location = "https://www.youtube.com/"))
 //exporting()
 
