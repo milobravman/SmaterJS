@@ -24,6 +24,11 @@ document.querySelector("#animation-btn").addEventListener("click",(()=> {
     animatedDiv.className = "animation"
 }) )
 
+document.querySelector("#animation-rest").addEventListener("click", (()=>{
+    let resetDiv = document.querySelector("#toAnimation")
+    resetDiv.className = ""
+}))
+
 
 //exporting()
 
