@@ -29,6 +29,9 @@ document.querySelector("#animation-rest").addEventListener("click", (()=>{
     resetDiv.className = ""
 }))
 
+localStorage.setItem("name","John Doe");
+console.log(localStorage.getItem("name"))
+
 
 //exporting()
 
