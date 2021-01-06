@@ -53,7 +53,7 @@ function loadDoc() {
 
   const makeNode = (value, leftChild, rightChild) => {
       let node = {
-          value: value,
+          name: value,
           leftChild: leftChild,
           rightChild: rightChild,
       }
@@ -62,6 +62,7 @@ function loadDoc() {
   }
 
   console.log(makeNode(1,2,3))
+  console.log(makeNode("second Node", {name: "leftChild"}, {name: "rightChild"}))
 
 //exporting()
 
