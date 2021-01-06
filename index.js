@@ -61,8 +61,10 @@ function loadDoc() {
       return node
   }
 
-  console.log(makeNode(1,2,3))
-  console.log(makeNode("second Node", {name: "leftChild"}, {name: "rightChild"}))
+  const b =  makeNode("b",makeNode("d"),makeNode("e"))
+  const c =  makeNode("c",makeNode("f"),makeNode("g"))
+
+  console.log(makeNode("a", b, c))
 
 //exporting()
 
