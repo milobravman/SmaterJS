@@ -49,5 +49,19 @@ function loadDoc() {
     xhttp.send();
   }
 
+  // Working with trees in JS
+
+  const makeNode = (value, leftChild, rightChild) => {
+      let node = {
+          value: value,
+          leftChild: leftChild,
+          rightChild: rightChild,
+      }
+
+      return node
+  }
+
+  console.log(makeNode(1,2,3))
+
 //exporting()
 
