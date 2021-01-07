@@ -5,6 +5,7 @@ This repo is ment to practice Javascript capablities that I learn from either te
 //import {exporting} from "./exporting.js"
 import k from "./modules/exporting.js"
 import User, {printAge, printName} from "./modules/user.js"
+import {makeNode, printBranches} from "./modules/tree.js"
 
 
 let today = new Date;
@@ -51,20 +52,13 @@ function loadDoc() {
 
   // Working with trees in JS
 
-  const makeNode = (value, leftChild, rightChild) => {
-      let node = {
-          name: value,
-          leftChild: leftChild,
-          rightChild: rightChild,
-      }
-
-      return node
-  }
-
   const b =  makeNode("b",makeNode("d"),makeNode("e"))
   const c =  makeNode("c",makeNode("f"),makeNode("g"))
 
-  console.log(makeNode("a", b, c))
+  let x = makeNode("a", b, c)
+
+  console.log(x)
+  printBranches(x)
 
 //exporting()
 
