@@ -48,17 +48,19 @@ function loadDoc() {
     };
     xhttp.open("GET", "https://www.w3schools.com/js/ajax_info.txt", true);
     xhttp.send();
-  }
+}
 
   // Working with trees in JS
 
-  const b =  makeNode("b",makeNode("d"),makeNode("e"))
+  const d = makeNode("d",makeNode("y"),makeNode("z"))
+  const b =  makeNode("b",d,makeNode("e"))
   const c =  makeNode("c",makeNode("f"),makeNode("g"))
 
   let x = makeNode("a", b, c)
 
   console.log(x)
   printBranches(x)
+  printBranches(b)
 
 //exporting()
 
