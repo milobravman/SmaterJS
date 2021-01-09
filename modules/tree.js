@@ -20,10 +20,16 @@ export const printBranches = (tree) => {
 
 export const printLevels = (tree) => {
 
+    let currentLevel = 0;
+
     console.log(tree.name)
 
     if (tree.leftChild) {
         console.log(tree.leftChild.name)
+    }
+
+    if (tree.rightChild) {
+        console.log(tree.rightChild.name)
     }
 
 }
