@@ -18,6 +18,8 @@ export const printBranches = (tree) => {
     }
 }
 
+
+
 export const printLevels = (tree) => {
 
     let currentLevel = 0;
@@ -31,5 +33,16 @@ export const printLevels = (tree) => {
     if (tree.rightChild) {
         console.log(tree.rightChild.name)
     }
+
+}
+
+const printLevel = () =>
+{
+
+}
+
+export const hight = () => {
+
+
 
 }
