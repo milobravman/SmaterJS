@@ -9,13 +9,13 @@ import {makeNode, printBranches, printLevels} from "./modules/tree.js"
 
 
 let today = new Date;
-console.log(today.getDay());
-console.log(today.toString());
-console.log(k)
+// console.log(today.getDay());
+// console.log(today.toString());
+// console.log(k)
 
 let user = new User("bob", 10)
-console.log(user)
-printAge(user)
+// console.log(user)
+// printAge(user)
 
 let Youbtn = document.querySelector("#Youtube")
 Youbtn.addEventListener("click" , (()=> location = "https://www.youtube.com/"))
@@ -33,7 +33,7 @@ document.querySelector("#animation-rest").addEventListener("click", (()=>{
 document.querySelector("#using-Ajax").addEventListener("click", loadDoc)
 
 localStorage.setItem("name","John Doe");
-console.log(localStorage.getItem("name"))
+// console.log(localStorage.getItem("name"))
 
 
 function loadDoc() {
@@ -65,4 +65,7 @@ function loadDoc() {
 printLevels(x)
 
 //exporting()
+
+
+
 
