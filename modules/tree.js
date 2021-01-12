@@ -23,8 +23,10 @@ export const printBranches = (tree) => {
 export const printLevels = (tree) => {
 
     let d = 1
+    let h = height(tree)
 
-    for (let i = 1; i <= height(tree); i++){
+    for (let i = 1; i <= h; i++){
+        console.log(h)
 
     }
 
@@ -45,17 +47,21 @@ const printLevel = () =>
 
 }
 
-const height = (tree) => {
+const height = (node) => {
 
-    if (tree.leftChild && tree.rightChild === null){
+    if (node === undefined){
         return 0 
     }
     else {
-        return 
+        let lHieght = height(node.leftChild)
+        let rHieght = height(node.rightChild)
+
+        if (lHieght > rHieght){
+            return lHieght + 1
+        }
+        else {
+            return rHieght + 1
+        }
+
     }
-
-
-
-
-
 }
