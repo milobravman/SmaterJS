@@ -25,14 +25,24 @@ export const printLevels = (tree) => {
     let h = height(tree)
 
     for (let i = 1; i <= h; i++){
-        printLevel(tree)
+        printLevel(tree, i)
     }
 
-    console.log(h)
 }
 
-const printLevel = () =>
+const printLevel = (tree, level) =>
 {
+    if (tree === undefined){
+        return
+    }
+    if (level === 1){
+        console.log(tree.name + " ")
+    }
+    else if (level > 1){
+        printLevel(tree.leftChild, level-1)
+        printLevel(tree.rightChild, level-1)
+    } 
+
     
 }
 

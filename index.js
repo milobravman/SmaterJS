@@ -63,8 +63,6 @@ function loadDoc() {
 //   printBranches(b)
 
 printLevels(x)
-printLevels(b)
-printLevels(d)
 
 
 //exporting()
