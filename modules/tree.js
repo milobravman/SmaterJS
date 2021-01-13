@@ -64,3 +64,15 @@ const height = (node) => {
 
     }
 }
+
+export const printTree = (tree) => {
+    let h = height(tree)
+
+    for (let i = 1; i <= h; i++){
+        levelToString(tree, i)
+    }
+}
+
+const levelToString = () => {
+    let 
+}
